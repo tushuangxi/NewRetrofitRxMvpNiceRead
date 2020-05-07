@@ -18,6 +18,7 @@ import com.otherhshe.niceread.utils.SPUtil;
 
 import butterknife.BindView;
 
+
 /**
  * Author: Othershe
  * Time:  2016/8/11 11:22
