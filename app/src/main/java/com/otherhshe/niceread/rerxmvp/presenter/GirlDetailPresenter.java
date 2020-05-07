@@ -28,7 +28,7 @@ public class GirlDetailPresenter extends BasePresenter<interfaceUtilsAll.GirlDet
                             }
 
                             @Override
-                            protected void _onError() {
+                            protected void _onError(Throwable e) {
                                 mView.onError();
                             }
                         });

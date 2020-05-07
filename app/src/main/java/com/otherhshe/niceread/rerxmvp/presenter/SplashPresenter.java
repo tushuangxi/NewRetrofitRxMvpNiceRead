@@ -28,7 +28,8 @@ public class SplashPresenter extends BasePresenter<interfaceUtilsAll.SplashView>
                             }
 
                             @Override
-                            protected void _onError() {
+                            protected void _onError(Throwable e) {
+                                e.printStackTrace();
                                 mView.onError();
                             }
                         });

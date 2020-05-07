@@ -30,7 +30,7 @@ public class GankItemPresenter extends BasePresenter<interfaceUtilsAll.GankItemV
                             }
 
                             @Override
-                            protected void _onError() {
+                            protected void _onError(Throwable e) {
                                 mView.onError();
                             }
                         });

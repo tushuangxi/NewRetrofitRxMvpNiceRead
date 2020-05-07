@@ -35,9 +35,7 @@ public abstract class RxSubscriber<T> extends Subscriber<T> {
         } else {
             Toast.makeText(mContext, e.getMessage(), Toast.LENGTH_SHORT).show();
         }
-
-        _onError();
-
+        _onError(e);
         cancelLoading();
     }
 
@@ -67,6 +65,6 @@ public abstract class RxSubscriber<T> extends Subscriber<T> {
 
     protected abstract void _onNext(T t);
 
-    protected abstract void _onError();
+    protected abstract void _onError(Throwable e);
 
 }
